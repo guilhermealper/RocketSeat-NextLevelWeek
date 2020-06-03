@@ -32,7 +32,5 @@ form{
     max-width: 700px;
     padding: 64px;
     border-radius: 8px;
-    /* box-sizing serve para obedecer primeiro o tamanho do box e depois o conteudo */
-    box-sizing: border-box;
     margin: 80px auto;
 }
