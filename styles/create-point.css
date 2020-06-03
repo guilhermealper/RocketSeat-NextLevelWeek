@@ -1,0 +1,38 @@
+#page-create-point{
+    width:90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 48px;
+}
+
+header a {
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header a span {
+    background-image: url('../assets/icones/arrow-left.svg');
+    margin-right: 16px;
+
+    display:flex;
+    width: 20px;
+    height: 24px;
+}
+form{
+    background: white;
+    max-width: 700px;
+    padding: 64px;
+    border-radius: 8px;
+    /* box-sizing serve para obedecer primeiro o tamanho do box e depois o conteudo */
+    box-sizing: border-box;
+    margin: 80px auto;
+}
