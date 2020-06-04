@@ -67,7 +67,7 @@ form .field-group {
 }
 form select,
 form input{
-    background-color:  #f0f0f5;
+    background-color:  #e0e0e5;
     border: 0;
     padding: 16px 24px;
     font-size: 16;
@@ -102,6 +102,46 @@ form button {
     font-weight: bold;
     font-size: 16px;
     transition: background-color 400ms;
+}
 
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:16px;
+}
+.items-grid li {
+    background-color: #e5e5e5;
+    list-style: none;
 
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+
+    height 180px;
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    cursor: pointer;
+}
+.items-grid li span{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+.items-grid li img{
+    margin-bottom: 20px;
+}
+
+.items-grid li.selected{
+    background: #e1faec;
+    border:2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
 }
