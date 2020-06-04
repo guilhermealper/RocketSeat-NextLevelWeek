@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link href="./styles/main.css" rel="stylesheet" type="text/css">
     <link href="./styles/home.css" rel="stylesheet" type="text/css">
+    <link href="./styles/modal.css" rel="stylesheet" type="text/css">
     <link href="./styles/responsive.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -15,7 +16,7 @@
         <div class="content">
             <header>
                 <img src="./assets//icones/logo.svg" alt="logomarca">
-                <a href="#"><span></span> Cadastre um ponto de coleta</a>
+                <a href="create-point.html"><span></span> Cadastre um ponto de coleta</a>
             </header>
         
             <main>
@@ -26,5 +27,25 @@
             </main>
         </div>
     </div>
+
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+                <h1>Pontos de coleta</h1>
+                <a href="#">Fechar</a>
+            </div>
+        
+            <form action="search-results.html">
+                <label for="search">Cidade</label>
+                <div class="search field">
+                    <input type="text" name="search" placeholder="Pesquise por cidade">
+                    <button>
+                        <img src="./assets/icones/search.svg" alt="buscar">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
