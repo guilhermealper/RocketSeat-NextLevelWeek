@@ -48,11 +48,20 @@ form fieldset {
     border: 0;
     width: 90%;
 }
+form legend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    margin-bottom: 36px;
+    width: 100%;
+}
 form legend h2 {
     font-size: 24px;
-    margin-bottom: 36px;
-    flex: 1;
+}
+form legend span {
+    color: var(--title-color);
+    font-size: 14px;
 }
 
 form .field {
@@ -83,6 +92,7 @@ form select {
 form label {
     font-size: 14px;
     margin-bottom: 8px;
+    color: var(--title-color);
 }
 
 /* No exemplo: o + em css faz com que ele analise apenas o div que tem a classe .field seguido de outro .field */
