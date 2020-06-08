@@ -1,5 +1,6 @@
 const express = require("express")
 const server = express()
+const db = require("./database/db")
 
 //configurando template engine
 const nunjucks = require("nunjucks")
@@ -22,7 +23,19 @@ server.get("/create-point", (req,res) => {
 })
 
 server.get("/search", (req,res) => {
-    return res.render("search-results.html")
+    //3. consultar dados na tabela
+    db.all(`SELECT * FROM places`, function(err, rows){
+        if(err){
+            console.log(err)
+        }
+        console.log("Aqui estão seus registros")
+        //mostrar bancos de dados
+        console.log(rows)
+        
+        return res.render("search-results.html", {places:rows})
+
+    })
+
 })
 
 
