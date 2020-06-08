@@ -7,16 +7,38 @@
         align-items: center;
         text-align: center;
     }
-    header a {
-        position: absolute;
-        bottom: 48px;
-        left:50%;
-        transform:translateX(-50%);
+    header {
+        flex-direction: column;
+    }
+    header a{
+        margin: 48px 0;
     }
 
     main{
         align-items: center;
     }
+
+    main a{
+        margin-bottom: 64px;
+    }
+
+
+    #page-create-point form{
+        margin: 0px auto;
+        max-width: 95%;
+        padding:12px;
+    }
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+    #page-create-point .field{
+        margin: 0 0 20px 0;
+    }
+    
+    #page-create-point .items-grid {
+        grid-template-columns: 1fr;
+    }
+
     #page-search-results .cards {
         grid-template-columns:  1fr;
     }
