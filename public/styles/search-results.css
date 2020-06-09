@@ -73,13 +73,17 @@ main .card p {
     color: #6C6C80;
 }
 
+body {
+    background: #fff;
+}
 body::after {
    content: ""; 
-   position: fixed;
-   background-color:#fff;
+   position: absolute;
+   background-color:#e0e0e5;;
    z-index: -1;
-   top: 260px;
+   top: 0px;
    bottom:0px;
    left: 0px;
    right: 0px;
-}
+   height: 16rem;
+}/
